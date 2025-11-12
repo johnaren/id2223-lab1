@@ -18,7 +18,6 @@ def check_venv():
         print("No virtual environment or Conda environment detected. Please create and activate one first.")
         sys.exit(1)
 
-
 @task
 def install(c):
     """Install dependencies using uv and pip."""
@@ -68,7 +67,7 @@ def aq_all(c):
     pass
 
 
-
+'''
 @task
 def install_recommender(c):
     """Install LLM-related dependencies."""
@@ -165,6 +164,4 @@ def titanic_inference(c):
 @task(pre=[titanic_features, titanic_train, titanic_inference])
 def titanic_all(c):
     pass
-
-
-
+'''
